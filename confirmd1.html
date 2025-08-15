@@ -1,0 +1,75 @@
+ 
+<html>
+<head>
+    <title>Adoption Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0fff0;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            max-width: 300px;
+            margin: auto;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2e8b57;
+        }
+        .fact {
+            background-color: #e6ffe6;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Adoption Confirmed! 🎉</h1>
+        <p><strong>Pet Name:</strong> <span id="petName"></span></p>
+        <p><strong>Age:</strong> 3 year old<span id="petAge"></span></p>
+        <p><strong>Breed:</strong> Beagle 🐶</p>
+        <p><strong>Applicant Name:</strong> <span id="applicantName"></span></p>
+        <p><strong>Request Number:</strong> <span id="requestNumber"></span></p>
+        <div class="fact" id="petFact"></div>
+    </div>
+
+    <script>
+        // Beagle details
+        let petName = "Charlie";
+        
+
+        // Get applicant name from URL (?name=YourName)
+        const urlParams = new URLSearchParams(window.location.search);
+        const applicantName = urlParams.get("name");
+
+        // Generate a random request number
+        const requestNumber = Math.floor(1000 + Math.random() * 9000);
+
+        // Fun facts about Beagles
+        const facts = [
+            "Beagles have an incredible sense of smell.",
+            "Beagles are friendly and great with kids.",
+            "Beagles were bred for hunting and tracking.",
+            "A Beagle's howl can be heard from far away!",
+            "Snoopy from Peanuts is a Beagle."
+        ];
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+
+        // Display data
+        document.getElementById("petName").textContent = petName;
+        
+        document.getElementById("applicantName").textContent = applicantName || "Unknown";
+        document.getElementById("requestNumber").textContent = requestNumber;
+        document.getElementById("petFact").textContent = randomFact;
+    </script>
+
+</body>
+</html>

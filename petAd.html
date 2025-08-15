@@ -1,0 +1,196 @@
+
+<html >
+<head>
+    
+    <title>Pet Adoption</title>
+
+    <style>
+        /* Reset default margin/padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fff7f5;
+            color: #333;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #fa4e4e;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav img {
+            max-height: 100px;
+            width: auto;
+        }
+
+        /* Title */
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 20px 0;
+            color: #e00202;
+        }
+
+        /* Pet cards container */
+        .pet-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Pet card */
+        .pet-card {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .pet-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .pet-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .pet-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .pet-type {
+            font-size: 1.1rem;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .view-btn {
+            background-color: #f48758;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.2s ease;
+            margin-bottom: 15px;
+        }
+
+        .view-btn:hover {
+            background-color: #ee5306;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #fa4e4e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive title */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <img src="https://www.pngkey.com/png/full/282-2829129_pet-adoption-center-logo.png" alt="Pet Adoption Logo">
+    </nav>
+
+    <!-- Title -->
+    <h1>🐾 Pet Adoption 🐾</h1>
+
+    <!-- Pet Cards -->
+    <div class="pet-container">
+        
+        <div class="pet-card">
+            <img src="https://tiimg.tistatic.com/fp/1/007/535/light-brown-persian-kitty-cat-with-brown-eyes-female-059.jpg" alt="Mittens">
+            <p class="pet-name">Mittens</p>
+            <p class="pet-type">Cat</p>
+            <a href="pdetailcat.html"><button class="view-btn">View Details</button></a>
+        </div>
+
+        <div class="pet-card">
+            <img src="https://images.photowall.com/products/57215/golden-retriever-puppy.jpg?h=699&q=85" alt="Buddy">
+            <p class="pet-name">Buddy</p>
+            <p class="pet-type">Dog</p>
+            <a href="pdetaildog.html"><button class="view-btn">View Details</button></a>
+        </div>
+
+        <div class="pet-card">
+            <img src="https://www.zooplus.ie/magazine/wp-content/uploads/2018/05/2-Jahre-Beagle.webp" alt="Charlie">
+            <p class="pet-name">Charlie</p>
+            <p class="pet-type">Dog</p>
+            <a href="pdetaild1.html"><button class="view-btn">View Details</button></a>
+        </div>
+
+       
+
+        <div class="pet-card">
+            <img src="https://www.puppiezo.com/wp-content/uploads/2025/03/PUG-4.jpg" alt="Toby">
+            <p class="pet-name">Toby</p>
+            <p class="pet-type">Dog</p>
+            <a href="pdetaild2.html"><button class="view-btn">View Details</button></a>
+        </div>
+
+         <div class="pet-card">
+            <img src="https://cdn.shopify.com/s/files/1/0435/0466/4732/files/how_long_do_siamese_cats_live_1_600x600.jpg?v=1653912141" alt="Milo">
+            <p class="pet-name">Milo</p>
+            <p class="pet-type">Cat</p>
+            <a href="pdetailc1.html"><button class="view-btn">View Details</button></a>
+        </div>
+
+        <div class="pet-card">
+            <img src="https://www.prodograw.com/wp-content/uploads/2023/04/pembroke-welsh-corgi.jpg" alt="Max">
+            <p class="pet-name">Max</p>
+            <p class="pet-type">Dog</p>
+            <a href="pdetaild3.html"><button class="view-btn">View Details</button></a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>🐾 Pet Adoption Center | Making Homes Happier 🐾</p>
+        <p>Contact us: <a href="mailto:info@petadoption.com">info@petadoption.com</a></p>
+        <p>&copy; 2025 Pet Adoption Center. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Max - Pet Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #e8faff, #fff9f3);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: #0077b6;
+        }
+
+        .pet-card {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .pet-card img {
+            width: 100%;
+            height: 350;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .pet-name {
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin: 10px 0;
+            color: #0096c7;
+        }
+
+        .pet-details p {
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+
+        .adopt-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .adopt-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="pet-card">
+            <p class="pet-name">Max</p>
+            <img src="https://www.prodograw.com/wp-content/uploads/2023/04/pembroke-welsh-corgi.jpg" >
+            <p class="pet-info"><strong>Age:</strong> 3 years</p>
+            <p class="pet-info"><strong>Breed:</strong> Pembroke Welsh Corgi</p>
+            <p class="pet-info"><strong>Fun Fact:</strong> Corgis were once used to herd cattle in Wales!</p>
+            <button class="adopt-btn" onclick="goToForm()">Adopt Me</button>
+        </div>
+    </center>
+
+    <script>
+        function goToForm() {
+            window.location.href = "adopd3.html"; // Link to adoption form
+        }
+    </script>
+</body>
+</html>

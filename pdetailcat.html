@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title></title>
+         <style>
+         body {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background: linear-gradient(135deg, #ffe6e6, #fff8f0);
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-top: 20px;
+            color: #e63946;
+        }
+
+        .pet-card {
+            display: block;
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+            width: 50%;
+            max-width: 400px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .pet-card img {
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+            margin-bottom: 15px;
+        }
+
+        .pet-name {
+            font-weight: bold;
+            font-size: 1.8rem;
+            margin: 10px 0;
+            color: #f25c54;
+        }
+
+        .pet-details p {
+            font-size: 1.1rem;
+            margin: 8px 0;
+        }
+
+        .adopt-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            margin-top: 15px;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+        }
+
+        .adopt-btn:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        
+        </style>
+    </head>
+    <body>
+        <center>
+         
+
+        <div class="pet-card">
+            <p class="pet-name">Mittens</p>
+            <img src="https://tiimg.tistatic.com/fp/1/007/535/light-brown-persian-kitty-cat-with-brown-eyes-female-059.jpg"
+                 height="400" width="450"/>
+            <p><strong>Age:</strong> 1 year</p>
+            <p><strong>Breed:</strong> Persian</p>
+            <p><strong>Fun Fact:</strong> Sleeps 16 hours a day!</p>
+            <button class="adopt-btn" onclick="goToForm()">Adopt Me</button>
+           </div>
+           </center>
+        
+        <script>
+        function goToForm() {
+            window.location.href = "adopcat.html"; // link to your form page
+        }
+    </script>
+    
+
+    </body>
+</html>
